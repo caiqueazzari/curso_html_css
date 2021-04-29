@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essa página em vários dispositivos diferentes ou aumente e diminua o seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-média.png" type="image/png">
+        <img src="imagens/imagem-grande.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/cat-shat-in-the-box.mp3" type="audio/mpeg">
+        <source src="midia/cat-shat-in-the-box.ogg" type="audio/ogg">
+        <source src="midia/cat-shat-in-the-box.wav" type="audio/wav"> <!-- Evitar usar wav, pois é muito pesado-->
+        <p>Infelizmente o seu navegador não consegue reproduzir áudios <a href="midia/cat-shat-in-the-box.mp3">Clique aqui para baixar o áudio</a></p>
+    </audio>
+    <!-- MP3 WAV OGG -->
+</body>
+</html>
